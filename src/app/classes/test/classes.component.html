@@ -1,0 +1,15 @@
+<div class="p-2 row">
+    <div class="col-md-2 p-1 columnPan">
+      <app-left (weekday)="sentday($event)"></app-left>       
+    </div>
+    <div class="col-md-10 columnPan">
+      <div class="row p-1  ColumnPan">
+        <app-r-top [weekday]="getday"></app-r-top>
+      </div>
+      <div class="row">
+        <app-r-bot></app-r-bot>
+      </div>
+    </div>
+</div>
+<!-- (weekday)="sentday($event)"
+[weekday]='getday' -->

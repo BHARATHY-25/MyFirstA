@@ -1,0 +1,122 @@
+<h3 class="container column1">
+<font style="font-family: Georgia, 'Times New Roman', Times, serif;" color="violet">
+    Douple Click The Button to Select a Day
+</font>
+</h3>
+<div *ngIf="weekday==0 || weekday==6; else elseblock">
+    
+</div>
+<ng-template #elseblock>
+    <br>
+</ng-template>
+
+<!-- {{saturday()}} -->
+<div [ngSwitch]="weekday">
+    <div *ngSwitchCase="0">
+        <h3>{{'Sorry , Today No Classes'}}</h3>
+    </div>
+    <div *ngSwitchCase="1">
+        {{monday()}}
+    </div>
+    <div *ngSwitchCase="2">
+        {{tuesday()}}
+    </div>
+    <div *ngSwitchCase="3">
+        {{wednesday()}}
+    </div>
+    <div *ngSwitchCase="4">
+        {{thrusday()}}
+    </div>
+    <div *ngSwitchCase="5">
+        {{friday()}}
+    </div>
+    <div *ngSwitchCase="6">
+        <h3>{{"Soory , Today No Classes"}}</h3>
+    </div>
+</div>
+
+<div>
+<h3 class="container column2" >
+    <font style="font-family:cursive;" size=4 color="black">
+        (1) [09:00 AM]  &nbsp; - &nbsp;  &nbsp; 
+       <select id="dropdown" [(ngModel)]="value1">
+            <option value="https://www.google.co.in">Google</option>
+            <option value="https://www.youtube.com">Youtube</option>
+            <option value="https://www.facebook.com">Facebook</option>
+            <option value="https://www.instagram.com">Instagram</option>
+            <option value="https://www.whatsapp.com">Whatsapp</option>
+        </select>
+    </font>&nbsp;&nbsp;
+    <a href="{{value1}}"><button class="button button1">Join</button></a>
+</h3>
+</div>
+
+<div>
+<h3 class="container column2">
+    <font style="font-family:cursive;" size=4 color="black">
+        (2) [10:00 AM] &nbsp; - &nbsp;  &nbsp; 
+        <select name="dropdown"[(ngModel)]="value2">
+            <option value="https://www.google.co.in">Google</option>
+            <option value="https://www.youtube.com">Youtube</option>
+            <option value="https://www.facebook.com">Facebook</option>
+            <option value="https://www.instagram.com">Instagram</option>
+            <option value="https://www.whatsapp.com">Whatsapp</option>
+        </select>
+    </font>&nbsp;&nbsp;
+    <a href="{{value2}}"><button class="button button1">Join</button></a>
+</h3>
+</div>
+
+<div>
+<h3 class="container column2">
+    <font style="font-family:cursive;" size=4 color="black">
+        (3) [11:00 AM] &nbsp;&nbsp; - &nbsp;  &nbsp; 
+        <select name="dropdown"[(ngModel)]="value3">
+            <option value="https://www.google.co.in">Google</option>
+            <option value="https://www.youtube.com">Youtube</option>
+            <option value="https://www.facebook.com">Facebook</option>
+            <option value="https://www.instagram.com">Instagram</option>
+            <option value="https://www.whatsapp.com">Whatsapp</option>
+        </select>
+    </font>&nbsp;&nbsp;
+    <a href="{{value3}}"><button class="button button1">Join</button></a>
+</h3>
+</div>
+
+<div>
+<h3 class="container column3 ">
+    <font style="font-family:cursive;" size=4 color="black">
+        (4) [12:00 PM]&nbsp; &nbsp; - &nbsp;  &nbsp; 
+        <select name="dropdown"[(ngModel)]="value4">
+            <option value="https://www.google.co.in">Google</option>
+            <option value="https://www.youtube.com">Youtube</option>
+            <option value="https://www.facebook.com">Facebook</option>
+            <option value="https://www.instagram.com">Instagram</option>
+            <option value="https://www.whatsapp.com">Whatsapp</option>
+        </select>
+    </font>&nbsp;&nbsp;
+    <a href="{{value4}}"><button class="button button1">Join</button></a>
+</h3>
+</div>
+
+<div>
+<h3 class="container column2">
+    <font style="font-family:cursive;" size=4 color="black">
+        (5) [01:00 AM] &nbsp; - &nbsp;  &nbsp; 
+        <select name="dropdown" [(ngModel)]="value5">
+            <option value="https://www.google.co.in">Google</option>
+            <option value="https://www.youtube.com">Youtube</option>
+            <option value="https://www.facebook.com">Facebook</option>
+            <option value="https://www.instagram.com">Instagram</option>
+            <option value="https://www.whatsapp.com">Whatsapp</option>
+        </select>
+    </font>&nbsp;&nbsp;
+    <a href="{{value5}}"><button class="button button1">Join</button></a>
+</h3>
+</div>
+
+
+
+
+
+

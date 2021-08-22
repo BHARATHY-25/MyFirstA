@@ -1,0 +1,33 @@
+.columnPan {
+    height:505px; 
+    column-width:80vw;
+    background-color: rgb(245, 247, 247); 
+    border-style: solid;   
+    border-radius: 30px;
+}
+h4{
+    padding-left: 10px;
+}
+.button{
+    background-color:rgba(2, 167, 167, 0.918);
+    color:white;
+    padding: 1px;
+} 
+.rows{
+    height: 90vh;
+    border: solid;
+    background-image: ('src\assets\heasder.jpg');
+}
+.h1{
+    color: rgb(240, 245, 248);
+    height: 35px;
+    text-align: center;
+    border-style: solid;
+    border-radius: 30px;
+}
+// .header1{
+//     background-image: url('src\assets\heasder.jpg');
+//     width: 1165px;
+//     height: 35px;
+//     border-radius: 20px;
+// }
